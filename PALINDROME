@@ -1,0 +1,22 @@
+public class PalindromeCheck {
+    public static void main(String[] args) {
+        String word = "madam"; 
+        int i = 0, j = word.length() - 1;
+        boolean isPalindrome = true;
+
+        while (i < j) {
+            if (word.charAt(i) != word.charAt(j)) {
+                isPalindrome = false;
+                break;
+            }
+            i++;
+            j--;
+        }
+
+        if (isPalindrome) {
+            System.out.println(word + " is a palindrome.");
+        } else {
+            System.out.println(word + " is not a palindrome.");
+        }
+    }
+}
